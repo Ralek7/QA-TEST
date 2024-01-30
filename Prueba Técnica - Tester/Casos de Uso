@@ -1,0 +1,69 @@
+#Pregunta 1: Registro de Usuario desde la Aplicación Móvil (iOS y Android)
+Feature: Registro de Usuario desde la Aplicación Móvil
+
+  Escenario: Registro de un nuevo usuario desde la aplicación móvil (iOS)
+    Dado que el usuario abre la aplicación móvil en iOS
+    Cuando el usuario selecciona la opción de registro
+    Y proporciona su nombre de usuario, correo electrónico y contraseña
+    Y confirma la creación de la cuenta
+    Entonces el sistema debe registrar al usuario con éxito
+    Y el usuario debe ser redirigido a la página de inicio de sesión
+
+  Escenario: Registro de un nuevo usuario desde la aplicación móvil (Android)
+    Dado que el usuario abre la aplicación móvil en Android
+    Cuando el usuario selecciona la opción de registro
+    Y proporciona su nombre de usuario, correo electrónico y contraseña
+    Y confirma la creación de la cuenta
+    Entonces el sistema debe registrar al usuario con éxito
+    Y el usuario debe ser redirigido a la página de inicio de sesión
+
+#Pregunta 2: Informe de Transacciones desde la Aplicación Móvil (iOS)
+Feature: Informe de Transacciones desde la Aplicación Móvil (iOS)
+
+  Escenario: Reportar una transacción desde la aplicación móvil en iOS
+    Dado que el usuario está autenticado en la aplicación móvil en iOS
+    Cuando el usuario selecciona la opción de reportar una transacción
+    Y completa el formulario con los detalles de la transacción
+    Y envía el informe
+    Entonces el sistema debe procesar la transacción correctamente
+    Y el estado de la transacción debe mostrarse como pendiente en la aplicación
+    Y el back office debe recibir la transacción para su procesamiento posterior
+
+#Pregunta 3: Integración de Backend y Back Office para Procesar Transacciones
+Feature: Integración de Backend y Back Office para Procesar Transacciones
+
+  Escenario: Procesamiento de transacciones reportadas desde aplicaciones móviles
+    Dado que hay transacciones reportadas desde las aplicaciones móviles (iOS y Android)
+    Cuando el backend procesa las transacciones recibidas
+    Y el back office valida y aprueba las transacciones
+    Entonces las transacciones deben marcarse como completadas en el sistema
+    Y los usuarios deben recibir confirmación de la finalización de las transacciones
+
+#Pregunta 4: Visualización de Historial de Transacciones en el Sitio Web
+Feature: Visualización de Historial de Transacciones en el Sitio Web
+
+  Escenario: Ver el historial de transacciones en el sitio web
+    Dado que el usuario ha iniciado sesión en el sitio web
+    Cuando el usuario navega a la sección de historial de transacciones
+    Entonces el sistema debe mostrar una lista de transacciones previas del usuario
+    Y cada transacción debe incluir detalles como la fecha, el monto y el estado
+
+#Pregunta 5: Pruebas de Rendimiento para Manejar Alta Carga de Transacciones
+Feature: Pruebas de Rendimiento para Manejar Alta Carga de Transacciones
+
+  Escenario: Evaluación del rendimiento del sistema bajo carga alta
+    Dado que el sistema está operativo y funcional
+    Cuando se simula una carga alta de transacciones simultáneas
+    Entonces el sistema debe manejar la carga sin errores graves
+    Y los tiempos de respuesta deben permanecer dentro de los límites aceptables
+
+#Pregunta 6: Actualización de Estado de Transacción desde la Aplicación Móvil (Android)
+Feature: Actualización de Estado de Transacción desde la Aplicación Móvil (Android)
+
+  Escenario: Actualizar el estado de una transacción desde la aplicación móvil en Android
+    Dado que el usuario está autenticado en la aplicación móvil en Android
+    Y tiene una transacción pendiente en su cuenta
+    Cuando el usuario selecciona la transacción pendiente
+    Y actualiza el estado de la transacción
+    Entonces el sistema debe reflejar el cambio de estado correctamente
+    Y el back office debe recibir la actualización para su registro
