@@ -1,6 +1,5 @@
 #Selenium (página web):
 WebElement botonInicioSesion = driver.findElement(By.xpath("//button[contains(text(),'Iniciar Sesión')]"));
 
-
 #Appium (aplicación móvil):
 WebElement botonInicioSesion = driver.findElement(By.xpath("//android.widget.Button[contains(@text,'Iniciar Sesión')]"));
