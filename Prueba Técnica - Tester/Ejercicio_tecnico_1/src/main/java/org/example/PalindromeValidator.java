@@ -12,7 +12,7 @@ public class PalindromeValidator {
             System.out.println(word + " is not a palindrome.");
         }
     }
-
+ 
     public static boolean isPalindrome(String word) {
         int length = word.length();
         for (int i = 0; i < length / 2; i++) {
