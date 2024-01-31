@@ -8,7 +8,7 @@ Feature: Registro de Usuario desde la Aplicación Móvil
     Y confirma la creación de la cuenta
     Entonces el sistema debe registrar al usuario con éxito
     Y el usuario debe ser redirigido a la página de inicio de sesión
-
+ 
   Escenario: Registro de un nuevo usuario desde la aplicación móvil (Android)
     Dado que el usuario abre la aplicación móvil en Android
     Cuando el usuario selecciona la opción de registro
